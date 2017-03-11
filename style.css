@@ -9,7 +9,7 @@ ul {
 
 body {
   /*background: #061E26; arc blue background*/
-  background: #282828;
+  background: #1f222d;
   height: 100%;
   width: 100%;
 }
@@ -25,7 +25,7 @@ main {
 }
 
 h1 {
-  color: #928374;
+  color: #858d8f;
   display: block;
   margin: 0 auto;
   text-align: left;
@@ -34,7 +34,7 @@ h1 {
 
 hr {
   border: 0;
-  border-top: 1px solid #ebdbb2;
+  border-top: 1px solid #858d8f;
   opacity: .4;
   width: 500px;
 }
@@ -46,7 +46,7 @@ ul {
 }
 
 li {
-  color: #d79921; 
+  color: #7dc1cf; 
   display: inline-block;
   font-size: 1.2em;
   line-height: 1.5;
@@ -55,7 +55,7 @@ li {
 }
 
 a {
-  color: #d65d0e;
+  color: #e1aa5d;
   text-decoration: none;
   transition: .2s;
 }
