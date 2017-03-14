@@ -24,8 +24,14 @@ main {
   width: 100%;
 }
 
+:root{
+    --home-clr:#858d8f;
+    --sites-clr:#D08770;
+    --categories-clr:#88C0D0;
+}
+
 h1 {
-  color: #858d8f;
+  color: var(--home-clr);
   display: block;
   margin: 0 auto;
   text-align: left;
@@ -34,7 +40,7 @@ h1 {
 
 hr {
   border: 0;
-  border-top: 1px solid #858d8f;
+  border-top: 1px solid var(--home-clr);
   opacity: .4;
   width: 500px;
 }
@@ -46,7 +52,8 @@ ul {
 }
 
 li {
-  color: #7dc1cf; 
+  /*color: #7dc1cf; */
+  color: var(--categories-clr); 
   display: inline-block;
   font-size: 1.2em;
   line-height: 1.5;
@@ -55,7 +62,8 @@ li {
 }
 
 a {
-  color: #e1aa5d;
+  /*color: #e1aa5d;*/
+  color: var(--sites-clr);
   text-decoration: none;
   transition: .2s;
 }
