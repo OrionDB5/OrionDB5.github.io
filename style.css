@@ -16,7 +16,8 @@ body {
 
 main {
   display: block;
-  font-family: 'Noto Sans';
+  /*font-family: 'Noto Sans';*/
+  font-family: 'Liberation Sans';
   left: 50%;
   position: absolute;
   top: 45%;
