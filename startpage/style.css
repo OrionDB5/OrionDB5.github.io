@@ -17,8 +17,8 @@ body {
 main {
   display: block;
   /*font-family: 'Noto Sans';*/
-  /*font-family: 'Liberation Sans';*/
-  font-family: 'Helvetica Neue';
+  font-family: 'Liberation Sans';
+  /*font-family: 'Helvetica Neue';*/
   left: 50%;
   position: absolute;
   top: 45%;
