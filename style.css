@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Pacifico|Source+Sans+Pro|Fira+Sans|Yanone+Kaffeesatz");
-/* @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Muli|Poppins|Quicksand|Varela+Round|Questrial|Raleway|Hind|Proxima+Nova'); Title & Logo fonts */
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans'); /* Title & Logo fonts */
-@import url('https://fonts.googleapis.com/css?family=Muli'); /* Title & Logo fonts */
-@import url('https://fonts.googleapis.com/css?family=Proxima+Nova'); /* Title & Logo fonts */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Muli|Poppins|Quicksand|Varela+Round|Questrial|Raleway|Hind'); /* Title & Logo fonts */
 @import url("https://use.fontawesome.com/releases/v5.0.13/css/all.css");
 /* @import url("https://use.typekit.net/coo2ylg.css"); */
 
@@ -42,6 +39,10 @@ body {
     color: #222;
 }
 
+ul {
+    list-style-type: none;
+}
+
 #content {
     margin: 10px auto;
     padding: 75px;
@@ -77,9 +78,8 @@ body {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                font-family: 'Proxima Nova', sans-serif;
+                font-family: 'Muli', sans-serif;
                 font-size: 13px;
-                list-style-type: none;
             }
 
             #top-nav .main-nav ul li {
@@ -131,7 +131,7 @@ body {
     #page {
         padding: 50px 0;
         text-align: center;
-        font-size: 24px;
+        font-size: 22px;
     }
         #page > p {
             margin: 20px 0;
@@ -151,7 +151,6 @@ body {
     }
 
         #footer > ul {
-            list-style-type: none;
             display: inline-block;
             width: 100%;
         }
@@ -160,7 +159,7 @@ body {
                 text-decoration: none;
                 display: inline-block;
                 margin: 0 6px;
-                font-family: 'Proxima Nova', sans-serif;
+                font-family: 'Muli', sans-serif;
                 color: inherit;
                 font-style: normal;
                 font-weight: bold;
