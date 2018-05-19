@@ -35,6 +35,8 @@
 
 body {
     /* background: var(--color3); */
+    font-family: 'Josefin Sans', sans-serif;
+    color: #222;
 }
 
 #content {
@@ -74,6 +76,7 @@ body {
                 align-items: center;
                 font-family: 'Proxima Nova', sans-serif;
                 font-size: 13px;
+                list-style-type: none;
             }
 
             #top-nav .main-nav ul li {
@@ -125,7 +128,6 @@ body {
     #page {
         padding: 50px 0;
         text-align: center;
-        font-family: 'Josefin Sans';
         font-size: 24px;
     }
         #page > p {
@@ -138,5 +140,26 @@ body {
 
             #page .image-wrapper img {
                 width: 100%;
+            }
+
+    #footer {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+        #footer > ul {
+            list-style-type: none;
+            display: inline-block;
+            width: 100%;
+        }
+
+            #footer ul li a, #footer ul li {
+                text-decoration: none;
+                display: inline-block;
+                margin: 0 6px;
+                font-family: 'Proxima Nova', sans-serif;
+                color: inherit;
+                font-style: normal;
+                font-weight: bold;
             }
 
