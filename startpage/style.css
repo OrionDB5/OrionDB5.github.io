@@ -9,7 +9,7 @@ ul {
 
 body {
   /*background: #061E26; arc blue background*/
-  background: #1f222d;
+  background: #2b303b;
   height: 100%;
   width: 100%;
 }
@@ -27,9 +27,9 @@ main {
 }
 
 :root{
-    --home-clr:#858d8f;
-    --sites-clr:#D08770;
-    --categories-clr:#88C0D0;
+    --home-clr:#a7adba;
+    --categories-clr:#8fa1b3;
+    --sites-clr: #d08770;
 }
 
 h1 {
@@ -55,7 +55,7 @@ ul {
 
 li {
   /*color: #7dc1cf; */
-  color: var(--categories-clr); 
+  color: var(--categories-clr);
   display: inline-block;
   font-size: 1.2em;
   line-height: 1.5;
