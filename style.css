@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Pacifico|Source+Sans+Pro|Fira+Sans|Yanone+Kaffeesatz");
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Muli|Poppins|Quicksand|Varela+Round|Questrial|Raleway|Hind|Proxima+Nova'); /* Title & Logo fonts */
+@import url("https://use.fontawesome.com/releases/v5.0.13/css/all.css");
+/* @import url("https://use.typekit.net/coo2ylg.css"); */
+
+
+@font-face {
+    font-family: 'Nexa_Free_Light';
+    src: url('fonts/Nexa_Free_Light-webfont.woff2') format('woff2'),
+         url('fonts/Nexa_Free_Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa_Free_Bold';
+    src: url('fonts/Nexa_Free_Bold-webfont.woff2') format('woff2'),
+         url('fonts/Nexa_Free_Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --color1: rgba(98, 144, 195, 1);
+    --color2: rgba(194, 212, 232, 1);
+    --color3: rgba(232, 242, 255, 1);
+    --color4: rgba(25, 43, 63, 1);
+    --color5: rgba(40, 140, 255, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background: var(--color3); */
+}
+
+#content {
+    margin: 10px auto;
+    padding: 75px;
+    max-width: 810px;
+}
+
+    #header {
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+        #logo {
+            font-family: 'Nexa_Free_Light', sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+            font-style: normal;
+            line-height: 1.6em;
+            text-align: center;
+            letter-spacing: 0.2em;
+        }
+
+            #logo a {
+                text-decoration: none;
+                color: #222;
+            }
+
+        #top-nav {
+            margin-top: 20px;
+            position: relative;
+        }
+
+            #top-nav .main-nav > ul {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-family: 'Proxima Nova', sans-serif;
+                font-size: 13px;
+            }
+
+            #top-nav .main-nav ul li {
+                color: #999;
+                cursor: pointer;
+            }
+
+                #top-nav ul li:hover {
+                    color: #222;
+
+                }
+                    .folder-collection {
+                        display: flex;
+                        justify-content: center;
+                        align-self: flex-start;
+                    }
+
+                    .folder-collection:hover .subnav {
+                        display: block;
+                        height: auto !important;
+                    }
+
+                    .subnav {
+                        display: none;
+                        z-index: 1;
+                        height: 0;
+                        position: absolute;
+                        top: 100%;
+                        text-align: center;
+                    }
+
+                        .subnav ul {
+                            display: block;
+                            padding: 7.5px 0;
+                            width: 100%;
+                        }
+                            .subnav ul li {
+                                display: block;
+                                width: 100%;
+                                padding: 4px;
+                                line-height: normal;
+                                background: #fcfcfc;
+                            }
+
+    #page-divider {
+        border-bottom: 1px solid #ddd;
+    }
+
+    #page {
+        padding: 50px 0;
+        text-align: center;
+        font-family: 'Josefin Sans';
+        font-size: 24px;
+    }
+        #page > p {
+            margin: 20px 0;
+        }
+
+        #page .image-wrapper {
+            display: block;
+        }
+
+            #page .image-wrapper img {
+                width: 100%;
+            }
+
