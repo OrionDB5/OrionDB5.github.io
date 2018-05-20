@@ -1,8 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Pacifico|Source+Sans+Pro|Fira+Sans|Yanone+Kaffeesatz");
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Muli|Poppins|Quicksand|Varela+Round|Questrial|Raleway|Hind|Cabin'); /* Title & Logo fonts */
-/* @import url("https://use.typekit.net/coo2ylg.css"); */
-
-
 @font-face {
 	font-family: 'Nexa_Free_Light';
 	src: url('fonts/Nexa_Free_Light-webfont.woff2') format('woff2'),
@@ -19,6 +14,7 @@
 	font-style: normal;
 }
 
+
 :root {
 	--color1: rgba(98, 144, 195, 1);
 	--color2: rgba(194, 212, 232, 1);
@@ -27,6 +23,8 @@
 	--color5: rgba(40, 140, 255, 1);
 }
 
+/* Style inspired by https://www.kennethreitz.org/, all credits goes to to him */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -34,7 +32,7 @@
 
 body {
 	/* background: var(--color3); */
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Hind', sans-serif;
 	color: #222;
 	/* background: url("src/background.jpg"); */
 	background-size: 350px;
@@ -52,25 +50,33 @@ ul {
 	grid-template-rows: 10% 0px 85% 0px 5%;
 	grid-gap: 40px;
 	background: #fff;
-	border: 1px solid #222;
+	border-right: 1px solid #222;
+	border-left: 1px solid #222;
 }
+
+	.fake-button {
+		background: #272727;
+		padding: 12px 14px;
+		color: #fff;
+		text-decoration: none;
+		font-style: normal;
+	}
 
 	#header {
 		text-transform: uppercase;
+		font-family: 'Hind', sans-serif;
 	}
 
 		#logo {
-			font-family: 'Nexa_Free_Light', sans-serif;
-			font-size: 24px;
-			font-weight: 300;
-			font-style: normal;
-			line-height: 2em;
 			text-align: center;
-			letter-spacing: 0.2em;
 		}
 
 			#logo h1 {
-				vertical-align: middle;
+				font-size: 46px;
+				font-weight: 400;
+				font-style: normal;
+				line-height: 1.2em;
+				letter-spacing: 0.1em;
 			}
 
 				#logo h1 a {
@@ -87,51 +93,59 @@ ul {
 				display: flex;
 				justify-content: space-around;
 				align-items: center;
-				font-family: 'Muli', sans-serif;
+				font-family: inherit;
 				font-size: 13px;
+				width: 90%;
+				margin: 0 auto;
 			}
 
-			#top-nav .main-nav ul li {
+			#top-nav .main-nav > ul > li {
 				color: #999;
 				cursor: pointer;
 			}
 
-				#top-nav ul li:hover {
+				#top-nav .main-nav > ul > li:hover {
 					color: #222;
 
 				}
 					.folder-collection {
 						display: flex;
 						justify-content: center;
-						align-self: flex-start;
 					}
 
 					.folder-collection:hover .subnav {
-						display: block;
-						height: auto !important;
+						height: auto;
+						visibility: visible;
 					}
 
 					.subnav {
-						display: none;
+						display: block;
 						z-index: 1;
-						height: 0;
+						visibility: hidden;
 						position: absolute;
 						top: 100%;
 						text-align: center;
+						background: #363636;
+						color: #ddd;
 					}
 
 						.subnav ul {
-							display: block;
+							display: flex;
 							padding: 7.5px 0;
+							flex-direction: column;
+							align-items: center;
 							width: 100%;
+
 						}
 							.subnav ul li {
-								display: block;
 								width: 100%;
-								padding: 4px;
+								padding: 3px 5px;
 								line-height: normal;
-								background: #fcfcfc;
 							}
+
+								.subnav > ul > li:hover {
+									color: #888;
+								}
 
 	#page-divider {
 		border-bottom: 1px solid #ddd;
@@ -139,8 +153,10 @@ ul {
 
 	#page {
 		text-align: center;
-		font-size: 22px;
+		font-size: 17px;
+		font-weight: 400;
 	}
+
 		#page .image-wrapper {
 			display: block;
 			margin: 15px 0;
@@ -150,27 +166,45 @@ ul {
 				width: 100%;
 			}
 
+		#page .buttons-wrapper {
+			padding: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
 	#footer {
 		text-align: center;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 
 		#footer-links {
-			font-weight: bold;
+			color: inherit;
+			font-weight: normal;
 			display: flex;
-			justify-content: space-around;
+			justify-content: center;
+			align-items: center;
+			font-family: 'Hind', sans-serif;
 			width: 100%;
 		}
 
-			#footer-links a {
-				text-decoration: none;
-				margin: 0 6px;
-				font-family: 'Muli', sans-serif;
-				color: inherit;
-				font-style: normal;
+			#footer > *:not(:last-child) {
+				margin-bottom: 10px;
 			}
+
+			#footer-links > li {
+				margin: 0 5px;
+			}
+
+				#footer-links a {
+					text-decoration: none;
+					margin: 0 6px;
+
+					color: inherit;
+					font-style: normal;
+				}
 
 		#accounts-icons {
 			display: flex;
@@ -195,8 +229,9 @@ ul {
 		grid-gap: 15px;
 		border: none;
 	}
-		#header #logo {
-			font-size: 16px;
+		#logo h1 {
+			letter-spacing: 0px;
+			font-size: 45px;
 		}
 
 		#top-nav {
