@@ -207,4 +207,8 @@ ul {
 			font-size: 14px;
 		}
 
+		#footer-links, #accounts-icons {
+			font-size: 0.75em;
+		}
+
 }
