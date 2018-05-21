@@ -90,7 +90,7 @@ body {
     padding: 1em;
     background-color: #272727;
     border-radius: 3px;
-    font-family: 'Fira Code', 'Code New Roman' 'Roboto Mono';
+    font-family: 'Fira Code', 'Code New Roman', 'Roboto Mono';
     font-size: .85rem;
     width: 25%;
     height: 10em;
