@@ -1,111 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
-	<link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
-	<link href="https://fonts.googleapis.com/css?family=Fira+Code:300,400" rel="stylesheet" />
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Fira+Code:300,400" rel="stylesheet" />
 </head>
 <body>
-    <div id="search">
-        <input id="search-field" type="text" name="search-field" onkeypress="return search(event)"/>
+  <div id="search">
+    <input id="search-field" type="text" name="search-field" onkeypress="return search(event)"/>
+  </div>
+  <div class="container">
+    <div id="clock"></div>
+    <div class="weather-container">
+      <div class="row">
+        <div id="weather-description"class="inline"></div>
+        <div class="inline">OrionDB5</div>
+        <div id="temp" class="inline"></div>
+      </div>
     </div>
-    <div class="container">
-        <div id="clock"></div>
-        <div class="weather-container">
-            <div class="row">
-                <div id="weather-description"class="inline"></div>
-                <div class="inline">OrionDB5</div>
-                <div id="temp" class="inline"></div>
-            </div>
+    <div class="bookmark-container">
+      <div class="bookmark-set">
+        <div class="bookmark-title">Daily</div>
+        <div class="bookmark-inner-container">
+          <a class="bookmark" href="https://inbox.google.com/" target="_blank">Inbox</a>
+          <a class="bookmark" href="https://mail.protonmail.com/inbox" target="_blank">Protonmail</a>
+          <a class="bookmark" href="https://github.com/" target="_blank">Github</a>
+          <a class="bookmark" href="https://drive.google.com/" target="_blank">Drive</a>
         </div>
-        <div class="bookmark-container">
-            <div class="bookmark-set">
-                <div class="bookmark-title">Daily</div>
-                <div class="bookmark-inner-container">
-                    <a class="bookmark" href="https://inbox.google.com/" target="_blank">Inbox</a>
-                    <a class="bookmark" href="https://mail.protonmail.com/inbox" target="_blank">Protonmail</a>
-                    <a class="bookmark" href="https://github.com/" target="_blank">Github</a>
-                    <a class="bookmark" href="https://drive.google.com/" target="_blank">Drive</a>
-                </div>
-            </div>
-            <div class="bookmark-set">
-                <div class="bookmark-title">Media</div>
-                <div class="bookmark-inner-container">
-                    <a class="bookmark" href="https://youtube.com/feed/subscriptions" target="_blank">Youtube</a>
-                    <a class="bookmark" href="https://netflix.com" target="_blank">Netflix</a>
-                    <a class="bookmark" href="https://open.spotify.com/collection/tracks" target="_blank">Spotify</a>
-                    <a class="bookmark" href="https://www.primevideo.com/" target="_blank">Amazon Prime</a>
-                    <a class="bookmark" href="https://www.unsplash.com/" target="_blank">Unsplash</a>
-                </div>
-            </div>
-            <div class="bookmark-set">
-            <div class="bookmark-title">Reddit</div>
-                <div class="bookmark-inner-container">
-                    <a class="bookmark" href="https://reddit.com/" target="_blank">frontpage</a>
-                    <a class="bookmark" href="https://reddit.com/r/FortniteBR" target="_blank">/r/FortniteBR</a>
-                    <a class="bookmark" href="https://reddit.com/r/popular" target="_blank">/r/popular</a>
-                    <a class="bookmark" href="https://reddit.com/me/m/linux" target="_blank">/m/linux</a>
-                    <a class="bookmark" href="https://reddit.com/r/unixporn" target="_blank">/r/unixporn</a>
+      </div>
+      <div class="bookmark-set">
+        <div class="bookmark-title">Media</div>
+        <div class="bookmark-inner-container">
+          <a class="bookmark" href="https://youtube.com/feed/subscriptions" target="_blank">Youtube</a>
+          <a class="bookmark" href="https://netflix.com" target="_blank">Netflix</a>
+          <a class="bookmark" href="https://open.spotify.com/collection/tracks" target="_blank">Spotify</a>
+          <a class="bookmark" href="https://www.primevideo.com/" target="_blank">Amazon Prime</a>
+          <a class="bookmark" href="https://www.unsplash.com/" target="_blank">Unsplash</a>
+        </div>
+      </div>
+      <div class="bookmark-set">
+      <div class="bookmark-title">Reddit</div>
+        <div class="bookmark-inner-container">
+          <a class="bookmark" href="https://reddit.com/" target="_blank">frontpage</a>
+          <a class="bookmark" href="https://reddit.com/r/FortniteBR" target="_blank">/r/FortniteBR</a>
+          <a class="bookmark" href="https://reddit.com/r/popular" target="_blank">/r/popular</a>
+          <a class="bookmark" href="https://reddit.com/me/m/linux" target="_blank">/m/linux</a>
+          <a class="bookmark" href="https://reddit.com/r/unixporn" target="_blank">/r/unixporn</a>
 
-                    <a class="bookmark" href="https://reddit.com/r/news" target="_blank">/r/news</a>
-                </div>
-            </div>
-            <div class="bookmark-set">
-                <div class="bookmark-title">Social</div>
-                <div class="bookmark-inner-container">
-                    <a class="bookmark" href="https://twitter.com" target="_blank">Twitter</a>
-                    <a class="bookmark" href="https://facebook.com" target="_blank">Facebook</a>
-                    <a class="bookmark" href="https://instagram.com" target="_blank">Instagram</a>
-                </div>
-            </div>
+          <a class="bookmark" href="https://reddit.com/r/news" target="_blank">/r/news</a>
         </div>
+      </div>
+      <div class="bookmark-set">
+        <div class="bookmark-title">Social</div>
+        <div class="bookmark-inner-container">
+          <a class="bookmark" href="https://twitter.com" target="_blank">Twitter</a>
+          <a class="bookmark" href="https://facebook.com" target="_blank">Facebook</a>
+          <a class="bookmark" href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <script>
-        // Search on enter key event
-        function search(e) {
-            if (e.keyCode == 13) {
-                var val = document.getElementById("search-field").value;
-                window.open("https://duckduckgo.com/?q=" + val);
-            }
-        }
-        // Get current time and format
-        function getTime() {
-            let date = new Date(),
-                min = date.getMinutes(),
-                sec = date.getSeconds(),
-                hour = date.getHours();
+  <script>
+    // Search on enter key event
+    function search(e) {
+      if (e.keyCode == 13) {
+        var val = document.getElementById("search-field").value;
+        window.open("https://duckduckgo.com/?q=" + val);
+      }
+    }
+    // Get current time and format
+    function getTime() {
+      let date = new Date(),
+        min = date.getMinutes(),
+        sec = date.getSeconds(),
+        hour = date.getHours();
 
-            return "" +
-                (hour < 10 ? ("0" + hour) : hour) + ":" +
-                (min < 10 ? ("0" + min) : min) + ":" +
-                (sec < 10 ? ("0" + sec) : sec);
-        }
+      return "" +
+        (hour < 10 ? ("0" + hour) : hour) + ":" +
+        (min < 10 ? ("0" + min) : min) + ":" +
+        (sec < 10 ? ("0" + sec) : sec);
+    }
 
-        window.onload = () => {
-            // Set up the clock
-            document.getElementById("clock").innerHTML = getTime();
-            // Set clock interval to tick clock
-            setInterval( () => {
-                document.getElementById("clock").innerHTML = getTime();
-            },100);
-        }
+    window.onload = () => {
+      // Set up the clock
+      document.getElementById("clock").innerHTML = getTime();
+      // Set clock interval to tick clock
+      setInterval( () => {
+        document.getElementById("clock").innerHTML = getTime();
+      },100);
+    }
 
-        document.addEventListener("keydown", event => {
-            if (event.keyCode == 32) {          // Spacebar code to open search
-                document.getElementById('search').style.display = 'flex';
-                document.getElementById('search-field').focus();
-            } else if (event.keyCode == 27) {   // Esc to close search
-                document.getElementById('search-field').value = '';
-                document.getElementById('search-field').blur();
-                document.getElementById('search').style.display = 'none';
-            }
-        });
-    </script>
+    document.addEventListener("keydown", event => {
+      if (event.keyCode == 32) {          // Spacebar code to open search
+        document.getElementById('search').style.display = 'flex';
+        document.getElementById('search-field').focus();
+      } else if (event.keyCode == 27) {   // Esc to close search
+        document.getElementById('search-field').value = '';
+        document.getElementById('search-field').blur();
+        document.getElementById('search').style.display = 'none';
+      }
+    });
+  </script>
 </body>
 </html>
